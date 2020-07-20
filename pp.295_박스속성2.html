@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*border값 계산해서 사이즈 측정*/
+            box-sizing: border-box;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            /*내용을 가운데로 배치*/
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .box1 {
+            background-color: red;
+            padding: 30px;
+            
+        }
+        
+        .box2 {
+            background-color: green;
+            border: 30px solid #000;
+        }
+        
+        .box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--.box${$번째 박스}*3-->
+    <div class="box1">1번째 박스</div>
+    <div class="box2">2번째 박스</div>
+    <div class="box3">3번째 박스</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트관련요소(인라인요소)</title>
+    <style>
+        /*선택자(CSS 적용시킬 대상지정){속성명:속성값;}*/
+        span {color: red; font-weight: bold;}
+        strong {color: red;}
+    </style>
+</head>
+<body>
+    <h1>
+        텍스트 요소 : 웹접근성과 관련이 높은 요소들
+    </h1>
+    <p>
+        <!--strong태그 : 볼드체로 보임, 낭독기에서 강조해서 읽어줌(접근성)-->
+        <!--b태그 : 단지 볼드체-->
+        <strong><strong>주말</strong></strong>마다 <b>&quot;서귀포 문화 예술 디자인&quot;</b> 시작이 열립니다.
+    </p>
+    <p>
+        <!--em태그 : 이탤릭체로 보임, 낭독기에서 강조해서 읽어줌-->
+        <!--i태그 : 단지 이탤릭체-->
+        <em>아트마켓</em>이라고도 부르는데, <i><b>문화예술체험</b></i>이나 공연관람을 할 수 있습니다.
+    </p>
+    <h2>
+         웹접근성
+    </h2>
+    <p>
+         <!--span태그 : 인라인요소 그룹핑태그, 주로 CSS와 연동해서 사용-->
+         <!--q태그 : 인용문, 들여쓰기 없음-->
+         <!--mark태그 : 형광펜효과-->
+         웹의 창시자 <span>팀 버너스리</span>는
+         <q cite="http://www.w3.org">웹의 힘은 보편성에 있다.
+             장애에 구애없이 모든 사람이 접근할 수 있는것이 필수적인 요소이다.</q>
+         라는 말로 <mark>웹 접근성</mark>을 설명한다.
+    </p>
+    <!--기타 텍스트요소들(인라인요소)-->
+    <p>
+        <!--abbr태그 : 축약-->
+        <abbr title="World Wide Web">WWW</abbr>은 인터넷 발전에 많은 기여를 했다.
+    </p>
+    <pre>
+        <code>
+            function name() {코드내용 보여줄때}
+        </code>
+    </pre>
+    <p>
+        <!--sup태그 : 윗첨자, sub태그 : 아랫첨자-->
+        E=mc<sup>2</sup> <br>
+        H<sub>2</sub>0
+    </p>
+    <p>
+        <u>정기세일 : 2020.07.10 ~ 2020.07.20</u> <br>
+        <s>정기세일 취소 : 2020.07.10 ~ 2020.07.20</s>
+    </p>
+    <p>
+        가격 : 20,000원 <small>(부가세별도)</small>
+    </p>
+    <p>
+        <ruby>韓自<rt>한자</rt></ruby>
+    </p>
+</body>
+</html>

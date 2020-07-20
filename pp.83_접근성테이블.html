@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>접근성테이블 중 합계/요약</title>
+    <style>
+        table, th, td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+        th, td {
+            width: 80px;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>학교현황</caption>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>초등학교</th>
+                <td>11,232</td>
+                <td>34,232</td>
+                <td>53,252</td>
+                <td>64,242</td>
+            </tr>
+            <tr>
+                <th>중학교</th>
+                <td>111,232</td>
+                <td>534,232</td>
+                <td>753,252</td>
+                <td>264,242</td>
+            </tr>
+            <tr>
+                <th>고등학교</th>
+                <td>41,232</td>
+                <td>4,232</td>
+                <td>23,252</td>
+                <td>64,242</td>
+            </tr>
+            <tr>
+                <th>특수학교</th>
+                <td>1,232</td>
+                <td>4,232</td>
+                <td>3,252</td>
+                <td>4,242</td>
+            </tr>
+            <tr>
+                <th>대학교</th>
+                <td>6,232</td>
+                <td>3,232</td>
+                <td>7,252</td>
+                <td>2,242</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>32,643</td>
+                <td>46,634</td>
+                <td>47,757</td>
+                <td>75,456</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

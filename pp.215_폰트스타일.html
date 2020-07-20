@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폰트연습</title>
+    <!--구글 웹폰트 CDN방식으로 사용하기-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        /*기본폰트 표준 사이즈 16px*/
+        /*h 태그들은 구조용 장식으로 쓰지 않기: 리셋후 스타일 적용*/
+        /*16px(고정값) = 1em(상대값) = 100% = 1rem*/
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        
+        p {
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            /*(30/16)*/
+            font-size: 1.875em;
+            font-size: 1.875rem;
+            font-size: 187.5%;
+        }
+        
+        .para2 {
+            color: purple;
+/*
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+            font-size: 1.250em;
+            font-size: 1.250rem;
+            font-size: 125%;
+            
+*/
+            font: bold italic 20px 'Roboto', sans-serif;
+        }
+        
+        .small {
+            font-variant: small-caps;
+            color: #0000ff;
+            color: blue;
+            color: rgb(0, 0, 255);
+            color: rgba(0, 0, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Web Standard Publishing
+    </h1>
+    <h2>
+        웹표준 방식 코딩
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequuntur dolores aliquid ut nobis, quibusdam expedita explicabo voluptates, quasi iusto corporis, libero saepe modi enim dolor assumenda. Cumque vero, ea!
+    </p>
+    <p class="para2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nisi blanditiis sit nam eligendi, eaque.
+    </p>
+    <p>
+        서울<span class="small">(Seoul)</span>, 대한민국
+    </p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼실습</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+  <h1>상품주문서</h1>
+    <form action="">
+       <fieldset>
+           <legend>개인정보</legend>
+           <ul>
+               <li>
+                   <label for="">이름</label>
+                   <input type="text" name="" id="" placeholder="여백없이 입력">
+               </li>
+               <li>
+                <label for="">연락처</label>
+                   <input type="text" name="" id="" placeholder="연락가능한 번호">          
+               </li>
+           </ul>
+       </fieldset>
+        
+        <fieldset>
+            <legend>배송지정보</legend>
+            <ul>
+                <li>
+                    <label for="">주소</label>
+                    <input type="text" name="" id="">    
+                </li>
+                <li>
+                    <label for="">전화번호</label>
+                    <input type="text" name="" id="">                
+                </li>
+                <li>
+                    <label for="">메모</label>
+                    <textarea name="" id="" cols="35" rows="3"></textarea>                
+                </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                   <label>
+                       <input type="checkbox">LCD모니터
+                       <input type="text" value="1" size="3">개
+                   </label>
+                </li>
+                <li>
+                   <label>
+                       <input type="checkbox">메모리
+                       <input type="text" value="1" size="3">개
+                   </label>                
+                </li>
+                <li>
+                   <label>
+                       <input type="checkbox">키보드
+                       <input type="text" value="1" size="3">개
+                   </label>
+                </li>
+            </ul>
+       
+        </fieldset>
+        
+        <fieldset>
+            <legend>검색</legend>
+            <p>
+                <label>
+                    <input type="text" placeholder="검색어를 넣어주세요">
+                </label>
+                <input type="button" value="검색">
+                
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시작성">
+   </form>
+</body>
+</html>

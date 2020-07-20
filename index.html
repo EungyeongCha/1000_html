@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>200717실습_차은경</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        
+        h2 {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            color: #000;
+        }
+        
+        img {
+            width: 300px;
+            height: 200px;
+        }
+        
+        table, th, tr, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            width: 600px;
+            height: 30px;
+            padding: 5px;
+            
+        } 
+        
+        #wrap {
+            margin: 0 auto;
+            width: 960px;
+            border: 5px solid #000;
+        }
+    
+        #header{
+            padding: 30px;
+            background-color: darkred;
+        }
+        
+        #content1 {
+            padding: 30px;
+            background-color: yellowgreen;
+        }
+        
+        #content2 {
+            padding: 30px;
+            background-color: tomato;
+        }
+        
+        #content3 {
+            padding: 30px;
+            background-color: dodgerblue;
+        }
+        
+        .skillslist {
+            font-weight: bold;
+            color: red;
+        }
+        
+        #content4 {
+            padding: 30px;
+            background-color: steelblue;
+        }
+        
+        #footer {
+            padding: 30px;
+            background-color: lightsalmon;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img src="images/pfpic.png" alt="프로필사진">
+            <h2>CHA EUNGYEONG</h2>
+            <p>이메일: eungyungcha@gmail.com</p>
+            <h2>GNB 메뉴</h2>
+            <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Publishing</a></li>
+                <li><a href="#">Planning</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="content1">
+                <h2>Who Am I?</h2>
+                <p>이젠컴퓨터아카데미 강의 수강 중</p>
+            </div>
+            <div id="content2">
+                <h2>SNS</h2>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </div>
+            <div id="content3">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li><span class="skillslist">사용언어</span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>javaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </li>
+                    <li><span class="skillslist">사용툴</span>
+                        <ul>
+                            <li>PHOTOSHOP</li>
+                            <li>ILLUSTRATOR</li>
+                            <li>BRACKETS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="content4">
+                <h2>Academic</h2>
+                <table>
+                    <caption>학력사항</caption>
+                    <tr>
+                        <th>학력사항</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                        <th>졸업구분</th>
+                    </tr>
+                    <tr>
+                        <td>이젠고등학교</td>
+                        <td>문과</td>
+                        <td>2000.00.00~2000.00.00</td>
+                        <td>졸업</td>
+                    </tr>
+                    <tr>
+                        <td>이젠대학교</td>
+                        <td>글로벌경영</td>
+                        <td>2000-00 ~ 2000.-00</td>
+                        <td>졸업</td>
+                    </tr>
+                </table>
+                <br>
+                <h2>Career</h2>
+                <table>
+                    <caption>경력사항</caption>
+                    <tr>
+                        <th>경력사항</th>
+                        <th>업무</th>
+                        <th>기간</th>
+                        <th>비고</th>
+                    </tr>
+                    <tr>
+                        <td>이젠마케팅</td>
+                        <td>인턴</td>
+                        <td>2000.00.00~2000.00.00</td>
+                        <td>수료</td>
+                    </tr>
+                    <tr>
+                        <td>이젠영어학원</td>
+                        <td>교사</td>
+                        <td>2000-00 ~ 2000.-00</td>
+                        <td>퇴사</td>
+                    </tr>
+                    <tr>
+                        <td>이젠무역</td>
+                        <td>직원</td>
+                        <td>2000-00 ~ 2000.-00</td>
+                        <td>퇴사</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+            <p> &copy; COPYRIGHT ALL RIGHTS RESEVED</p>
+        </div>
+    </div>
+</body>
+</html>

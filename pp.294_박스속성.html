@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+    <style>
+/*    블록요소 width height 설정 가능, 인라인 불가능*/
+/*        박스의 크기 = 컨텐츠 크기 + padding + border*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        body {
+            width: 1000px;
+            height: 1000px;
+/*            bd+*/
+            border: 1px solid red;
+        }
+        
+        p {
+            width: 200px;
+            height: 100px;
+        }
+        
+        .box1 {
+            width: 160px;
+            height: 60px;
+            padding: 20px;
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+        
+        .box2 {
+            background-color: pink;
+/*            margin-bottom: 50px;*/
+            margin-top: 50px;
+        }
+        
+        .box3 {
+            width: 180px;
+            height: 80px;
+            background-color: blue;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+/*            padding: 20px;*/        
+        }
+        
+        .txt_1 {
+            display: block;
+        }
+        
+        .txt_2 {
+            background-color: cyan;
+            display: block;
+        }
+        
+        .txt_3 {
+            background-color: blueviolet;
+            display: inline-block;
+        }
+        
+        .txt_4 {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+<!--    p.box${BOX$}*3-->
+    <p class="box1">BOX1</p>
+    <p class="box2">BOX2</p>
+    <p class="box3">BOX3</p>
+    <span class="txt_1">인라인레벨1</span>
+    <span class="txt_2">인라인레벨2</span>
+    <span class="txt_3">인라인레벨3</span>
+    <span class="txt_4">인라인레벨4</span>
+</body>
+</html>

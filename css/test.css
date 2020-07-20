@@ -1,0 +1,41 @@
+@charset "utf-8";
+span {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+/*class 선택자 사용*/
+.txt_1 {
+    background-color: red;
+    color: #ffffff;
+}
+/*캐스케이딩 원리*/
+.txt_2 {
+    background-color: orange;
+    color: purple;
+    font-size: 36px;
+}
+.txt_2 {
+    font-size: 16px;
+    color: red;
+}
+/*id 선택자 사용*/
+#txt_3 {
+    background-color: palegoldenrod;
+}
+/*그룹선택자*/
+.group, .group1 {
+    background-color: cyan;
+}
+.dot {
+    color: pink;
+}
+.pound {
+    color: green;
+}
+.com {
+    color: blue;
+}
+.dot, .pound, .com {
+    font-size: 60px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기본구조실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            width: 960px;
+            /*background-color: red;*/
+            /*부모너비기준*/
+            margin: 0 auto;
+        }
+        
+        #header {
+            height: 100px;
+            background-color: red;
+        }
+        
+        #slide {
+            height: 200px;
+            background-color: green;
+        }
+        
+        #contents {
+            height: 300px;
+            background-color: blue;
+        }
+        
+        #footer {
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+       <!--1. 헤더영역 시작-->
+        <div id="header">
+            헤더영역
+        </div>
+       <!--1. 헤더영역 끝-->
+       <!--2. 슬라이더영역 시작-->
+        <div id="slide">
+            슬라이더영역
+        </div>
+       <!--2. 슬라이더영역 끝-->
+       <!--3. 컨턴츠영역 시작-->
+        <div id="contents">
+            컨텐츠영역
+        </div>
+       <!--3. 컨텐츠영역 끝-->
+       <!--3. 푸터영역 시작-->
+        <div id="footer">
+            푸터영역
+        </div>
+       <!--3. 푸터영역 끝-->
+    </div>
+</body>
+</html>

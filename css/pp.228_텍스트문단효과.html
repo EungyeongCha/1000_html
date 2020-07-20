@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 문단</title>
+    <style>
+        /*1. 대, 소문자 관련*/
+        .trans1 {
+            text-transform: uppercase;
+            color: red;
+        }
+        
+        .trans2 {
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+        
+        /*2. 그림자 효과*/
+        .shadow1 {
+            font-size: 36px;
+            color: orange;
+            text-shadow: 2px 2px 3px #000;
+        }
+        
+        .shadow2 {
+            color: #000;
+            font-size: 48px;
+            letter-spacing: 5px;
+            text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #ffdd33, -2px -15px 10px #ff8800, 2px -18px 18px #ff2200;
+        }
+        
+        /*3. 자간, 단어간*/
+        .letter {
+            letter-spacing: 20px;
+            letter-spacing: 1.25em;
+        }
+        
+        .word {
+            word-spacing: 50px;
+        }
+        
+        /*4. 텍스트 정렬(내용이 움직임 / margin auto 와 병행)*/
+        .align-left, .align-center, .align-right, .align-justify {
+            border: 1px solid #000;
+            margin: 30px;
+            padding: 10px;
+        }
+        .align-left {
+            text-align: left;
+            text-indent: 50px;
+        }
+        
+        .align-center {
+            text-align: center;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        .align-justify {
+            text-align: justify;
+        }
+        
+        /*5. 인라인 요소 세로방향 위치 지정*/
+        p img {
+            vertical-align: middle;
+        }
+        
+        /*6. 넘치는 텍스트 처리*/
+        .content {
+            width: 300px;
+            border: 1px dashed #000;
+            /*공백처리 (기본값)*/
+/*
+            white-space: normal;
+            white-space: nowrap;
+*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+   <!--1. 대, 소문자 관련-->
+    <h1>
+        Have to study
+    </h1>
+    <ul>
+        <li class="trans1">html</li>
+        <li class="trans1">css</li>
+        <li class="trans2">javascript</li>
+    </ul>
+    
+    <!--2. 그림자 효과-->
+    <h2 class="shadow1">HTML5</h2>
+    <h2 class="shadow2">HTML5</h2>
+    
+    <!--3. 자간, 단어간-->
+    <h3>
+        <span class="letter">HTML5</span>와 CSS3
+    </h3>
+    <h3 class="word">HTML5와 CSS3</h3>
+    
+    <!--4. 텍스트 정렬-->
+    <p class="align-left">
+        모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
+    </p>
+    <p class="align-center">
+        모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
+    </p>
+    <p class="align-right">
+        모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
+    </p>
+    <p class="align-justify">
+        모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다. 국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
+    </p>
+    
+    <!--5. 인라인 요소 세로방향 위치 지정-->
+    <p>
+        vertical-align 텍스트 위치
+        <img src="http://www.placehold.it/320x240/ff0000" alt="가상이미지">
+    </p>
+    
+    <!--6. 넘치는 텍스트 처리-->
+    <p class="content">
+        텍스트가 박스 크기를 넘칠 때 처리방법 텍스트가 박스 크기를 넘칠 때 처리방법
+    </p>
+</body>
+</html>

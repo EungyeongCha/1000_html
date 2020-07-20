@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5폼</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--  action = 서버프로그래밍파일명|*.php,*.jsp,*.asp-->
+<!--  method = 파일전송방식-->
+   <form action="서버프로그래밍문서.php.jsp.asp" method="post">
+       <!--기본 폼-->
+<!--       input 인라인 이지만 li, p블록이어서 블록처리됨-->
+       <fieldset>
+           <legend>로그인정보</legend>
+           <ul>
+               <li>
+                   <label for="a_id">아이디 : </label>
+                   <input type="text" id="a_id" size="50">
+               </li>
+               <li>
+                   <label for="a_pw">비밀번호 : </label>
+                   <input type="password" name="" id="a_pw">
+               </li>
+               <li>
+                   <label for="a_pw2">비밀번호확인 : </label>
+                   <input type="password" id="a_pw2">
+               </li>
+               <li>
+                   <label>
+                       <input type="file">
+                   </label>
+               </li>
+               <li>
+                   <label for="memo">메모</label>
+                   <textarea cols="100" rows="3" id="memo"></textarea>
+               </li>
+           </ul>
+       </fieldset>
+<!--       실제로 서버로 전송-->
+       <input type="submit" value="전송">
+       <input type="reset" value="취소">
+<!--       눈에 보이는 역할만 함-->
+       <input type="button" value="확인">
+       <input type="image" src="http://www.placehold.it/50x24" alt="이미지버튼">
+       
+<!--       유효성검사-->
+       <fieldset>
+           <legend>필드 유효성 검사</legend>
+           <p>
+               <span>*</span>표시는 필수 항목입니다.
+           </p>
+           <ul>
+               <li>
+                   <label for=""><span>*</span> 이름 :</label>
+                   <input type="text" required="required" autofocus autocomplete="on">
+               </li>
+               <li>
+                   <label for=""><span>*</span> 아이디 :</label>
+                   <input type="text" required="required">
+               </li>
+               <li>
+                   <label for=""><span>*</span> 비밀번호 :</label>
+                   <input type="password" required>
+               </li>
+               <li>
+                   <label for=""><span>*</span> 전화번호 :</label>
+                   <input type="tel" required>
+               </li>
+               <li>
+                   <label for="">이메일 :</label>
+                   <input type="email" placeholder="id@도메인명">
+               </li>
+           </ul>
+           <p>
+               <input type="submit" value="전송">
+               <input type="reset" value="취소">
+           </p>
+       </fieldset>
+       
+       <fieldset>
+           <legend>HTML5 input type</legend>
+           <p>
+               <label for="">검색 :</label>
+               <input type="search" name="" id="">
+           </p>
+           <p>
+               <label for="">사이트주소 :</label>
+               <input type="url" name="" id="">
+           </p>
+<!--           부가적 input type-->
+           <p>
+               <label for="">날짜선택: </label>
+               <input type="date" name="" id="">
+           </p>
+<!--           파이어폭스, 사파리, 구버전 IE지원안됨 | type:month, week, time-->
+           <p>
+               <label for="">월 :</label>
+               <input type="month" name="" id="">
+           </p>
+       </fieldset>
+       
+       <fieldset>
+           <legend>라디오버튼(*)</legend>
+           <p>
+               이 달에 신청할 과목을 선택하세요(1과목만 선택가능)
+           </p>
+<!--           value(required) = server related, name: makes you select 1itme-->
+           <label>
+               <input type="radio" name="subject" value="html" checked>HTML
+<!--               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+           </label>
+           <label>
+               <input type="radio" name="subject" value="css">CSS
+           </label>
+           <label>
+               <input type="radio" name="subject" value="jquery">jQuery
+           </label>
+       </fieldset>
+       
+       <fieldset>
+           <legend>체크박스(*)</legend>
+           <p>
+               정보를 받고 싶은 과목을 선택하세요(복수선택가능)
+           </p>
+           <label>
+               <input type="checkbox" name="mailing1" value="html">HTML
+           </label>
+           <label>
+               <input type="checkbox" name="mailing2" value="css">CSS
+           </label>
+           <label>
+               <input type="checkbox" name="mailing3" value="jquery" checked>jQuery
+           </label>
+       </fieldset>
+       
+       <fieldset>
+           <legend>select(*) = 여러데이터 나열</legend>
+           <p>
+               웹퍼블리싱
+           </p>
+<!--
+           <p>
+               여러항목을 선택하고 싶으면 SHIFT+클릭
+           </p>
+           <select multiple>
+-->
+           <select>
+               <option value="html">HTML</option>
+               <option value="css">CSS</option>
+               <option value="javascript">JAVASCRIPT</option>
+               <option value="jquery">JQUERY</option>
+               <option value="rwd">RESPONSIVE WEB</option>
+           </select>
+       </fieldset>
+       
+       <fieldset>
+           <legend>optgroup = 여러데이터 분류</legend>
+           <p>
+               <label for="">웹퍼블리싱 디자인</label>
+                <select>
+                    <optgroup label="웹퍼블리싱">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JAVASCRIPT</option>
+                        <option value="jquery">JQUERY</option>
+                    </optgroup>
+                    <optgroup label="웹디자인">
+                        <option value="photoshpt">PHOTOSHOP</option>
+                        <option value="illustrator">ILLUSTRATOR</option>
+                    </optgroup>
+                </select>
+           </p>
+       </fieldset>
+       
+<!--       기타 참고 input 속성-->
+      <fieldset>
+              <legend>color 속성</legend>
+              <p>선호색상을 추천해 주세요</p>
+              <label>
+                  <input type="color" value="0x0000ff">
+              </label>
+      </fieldset>
+      
+      <fieldset>
+          <legend>disable속성과 readonly속성 = 프로그래밍과 관련</legend>
+          <ul>
+              <li>
+                  <label for="serial">시리얼 넘버 입력 :</label>
+                  <input type="text" id="serial">
+                  <input type="button" value="이전">
+                  <input type="button" value="다음" disabled>
+              </li>
+              <li>
+                  <label for="book">선택한 책:</label>
+                  <input type="text" value="웹퍼블리싱" id="book" readonly>
+              </li>
+          </ul>
+      </fieldset>
+      
+      <fieldset>
+          <legend> datalist 태그 = 데이터목록에 제시한 값 중 선택하면 텍스트필드에 자동으로 입력</legend>
+          <label for="interest">관심분야</label>
+          <input type="text" id="interest" list="choice">
+          <datalist id="choice">
+              <option value="grammar" label="문법"></option>
+              <option value="voca" label="어휘"></option>
+              <option value="speaking" label="회화"></option>
+              <option value="listening" label="리스닝"></option>
+          </datalist>
+      </fieldset>
+       
+       
+   </form> 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경이미지속성</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 3px double #000;
+            margin: 0 0 20px 0;
+        }
+        
+        .bg1 {
+            background-image: url("images/bg4.jpg");
+            background-size: auto;
+        }
+        
+        .bg2 {
+            background-image: url("images/bg4.jpg");
+            /*height 줄여서 맞추는 방법 있음*/
+            background-size: contain;
+        }
+        
+        .bg3 {
+            background-image: url("images/bg4.jpg");
+            /*반응형관련 속성값*/
+            background-size: cover;
+        }
+        
+        .bg4 {
+            background-image: url("images/bg4.jpg");
+            background-size: 200px 150px;
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+        }
+        
+        .bg5 {
+            background-image: url("images/bg4.jpg");
+            background-size: 50% 50%;
+        }
+        
+        .bg6 {
+            background-image: url("images/bg4.jpg");
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="bg6"></div>
+</body>
+</html>

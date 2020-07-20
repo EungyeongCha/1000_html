@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경이미지</title>
+    <style>
+        body {
+            background-image: url("images/bg1.png");
+        }
+        
+        #content {
+            width: 960px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px dashed #000;
+        }
+        
+        h1 {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+        p {
+            /*line-height 기본값 1em, 값을 위아래로 나눠가짐(1em = 0.5em + 0.5em)*/
+            /*1.5에서 2로 잡을것*/
+            line-height: 2em;
+        }
+        
+        .bg1, .bg2, .bg3 {
+            width: 300px;
+            border: 10px solid #000;
+            background-color: #00f;
+            padding: 30px;
+            margin: 20px;
+        }
+        
+        /*배경 적용 범위*/
+        .bg1 {
+            background-clip: border-box;
+        }
+        
+        .bg2 {
+            background-clip: padding-box;
+        }
+        
+        .bg3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Lorem Ipsum</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae tempora eaque, fuga dolor odio rem, mollitia dolorem fugiat ipsam dignissimos, autem, nisi at eius itaque! In expedita odit ducimus voluptatem deleniti nemo, vitae vel alias inventore, architecto, suscipit nostrum!
+        </p>
+        <div class="bg1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae tempora eaque, fuga dolor odio rem, mollitia dolorem fugiat ipsam dignissimos, autem, nisi at eius itaque! In expedita odit ducimus voluptatem deleniti nemo, vitae vel alias inventore, architecto, suscipit nostrum! 
+            </p>          
+        </div>
+        <div class="bg2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae tempora eaque, fuga dolor odio rem, mollitia dolorem fugiat ipsam dignissimos, autem, nisi at eius itaque! In expedita odit ducimus voluptatem deleniti nemo, vitae vel alias inventore, architecto, suscipit nostrum! 
+            </p>          
+        </div>
+        <div class="bg3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae tempora eaque, fuga dolor odio rem, mollitia dolorem fugiat ipsam dignissimos, autem, nisi at eius itaque! In expedita odit ducimus voluptatem deleniti nemo, vitae vel alias inventore, architecto, suscipit nostrum! 
+            </p>           
+        </div>
+    </div>
+</body>
+</html>

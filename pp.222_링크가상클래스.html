@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>링크가상클래스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        img {
+            vertical-align: none;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+        }
+        
+        ul {}
+        
+        ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        
+        /*1. link요소의 글자색*/
+        a:link {
+            color: red;
+        }
+        
+        /*2. link 방문했을때 글자색*/
+        a:visited {
+            color: green;
+        }
+        
+        /*3. 마우스 오버시 글자색*/
+        a:hover {
+            color: blue;
+        }
+        
+        /*4. 마우스 클릭순간 글자색*/
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        링크 가상 클래스 GNB메뉴 활용하기
+    </h1>
+<!--    ul>(li>a[href=#]{메뉴})*5-->
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">VISION</a></li>
+        <li><a href="#">MYSTORY</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">REQUEST</a></li>
+    </ul>
+</body>
+</html>

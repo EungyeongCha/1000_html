@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기본구조</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        #wrap {
+            width: 960px;
+        }
+        
+        #header {
+            background-color: orange;
+        }
+        
+        #gnb {
+            background-color: orangered;
+        }
+        
+        #content{}
+        
+        #left, #center, #right {
+            height: 160px;
+            background-color: peru;
+        }
+        
+        #center {
+            background-color: palevioletred;
+        }
+        
+        #right {
+            background-color: coral;
+        }
+        
+        #footer {
+            height: 160px;
+            background-color: yellowgreen;
+        }
+        
+        span {
+            font-style: italic;
+    </style>
+</head>
+<body>
+    <div id="wrap">
+       <!--1. 헤더영역 시작-->
+       <div id="header">
+           <h1>이젠컴퓨터아카데미</h1>
+           <h2>메인메뉴</h2>
+           <div id="gnb">
+               <ul>
+                   <li><a href="#">메뉴1</a>
+                       <ul>
+                           <li><a href="#">서브메뉴1</a></li>
+                           <li><a href="#">서브메뉴2</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">메뉴2</a>
+                       <ul>
+                           <li><a href="#">서브메뉴3</a></li>
+                           <li><a href="#">서브메뉴4</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">메뉴3</a></li>
+                   <li><a href="#">메뉴4</a>
+                       <ul>
+                           <li><a href="#">서브메뉴1</a></li>
+                           <li><a href="#">서브메뉴2</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <!--1. 헤더영역 끝-->
+       <!--2. 컨텐츠영역 시작-->
+       <div id="content">
+          <div id="left">
+              <h2>왼쪽 컨텐츠</h2>
+              <p>내용</p>
+          </div>
+          <div id="center">
+              <h2>가운데 컨텐츠</h2>
+              <p>내용</p>
+          </div>
+          <div id="right">
+              <h2>오른쪽 컨텐츠</h2>
+              <p>내용</p>
+          </div>
+       </div>
+       <!--2. 컨텐츠영역 끝-->
+       <!--3. 푸더영역 시작-->
+       <div id="footer">
+           <p><span>사이트 정보</span></p>
+       </div>
+       <!--3. 푸더영역 끝-->
+   </div>
+    
+</body>
+</html>

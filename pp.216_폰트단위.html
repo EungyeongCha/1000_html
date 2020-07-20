@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폰트단위</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-size: 40px;
+        }
+        
+        .px {
+            font-size: 32px;
+        }
+        
+        h2 {
+            font-size: 1em;
+            font-size: 2em;
+        }
+        
+        .em {
+            font-size: 3em;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        .rem {
+/*rem: 브라우저 폰트 설정이 부모 != em: 부모 폰트 크기 기준(16px)*/ 
+/*크롬기준 | 아주작음: 9px~10px | 작음: 12px | 중간(권장): 16px | 크게: 20px | 아주크게: 24px*/
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <p class="px">폰트1</p>
+    </h1>
+    <h2>
+        <p class="em">폰트2</p>
+    </h2>
+    <h2>
+        <p class="rem">폰트3</p>
+    </h2>
+</body>
+</html>

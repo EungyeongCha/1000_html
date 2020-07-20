@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹실습</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        button {
+            border: none;
+            padding: 15px 30px;
+            margin: 8px;
+            background-color: gainsboro;           
+        }
+    </style>
+</head>
+<body>
+   <h1>프론트엔드 개발자 지원서</h1>
+   <p>HTML, CSS, javaScript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+   <hr>
+   <h2>개인정보</h2>
+   <form action="#">
+        <ul>
+            <li>
+               <label for="a_name">이름</label>
+               <input type="text" name="" id="name" autofocus placeholder="공백없이 입력하세요">
+            </li>
+            <li>
+                <label for="a_contact">연락처</label>
+                <input type="tel" name="" id="a_contact">
+            </li>
+           </ul>
+   <h2>지원분야</h2>
+       <ul>
+           <li>
+               <label>
+                   <input type="radio" name="web" id="publishing" checked>웹퍼블리싱
+               </label>
+           </li>
+           <li>
+               <label>
+                   <input type="radio" name="web" id="app">웹애플리케이션개발
+               </label>
+           </li>
+           <li>
+               <label for="design">
+                   <input type="radio" name="web" id="design">웹디자인
+               </label>
+           </li>
+       </ul>
+   <h2>지원동기</h2>
+       <textarea cols="70" rows="7" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+           <p>
+               <button type="submit">접수하기</button>
+               <button type="reset">다시쓰기</button>
+           </p>
+   </form>
+</body>
+</html>

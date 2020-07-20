@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>GNB메뉴기초</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         li {
+            list-style: none;
+
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        
+        #wrap {
+            margin: 0 auto;
+        }
+        
+        #content {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            
+        }
+        
+        ul li {
+            display: inline-block; 
+            margin-right: 30px;
+        }
+        
+        ul li:nth-child(4) {
+            margin-right: 0px;
+        }
+        
+        a:hover {
+            color: red;
+            text-shadow: 0 0 2px #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">MYSTORY</a></li>
+                <li><a href="#">VISION</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

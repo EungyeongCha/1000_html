@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>원형그라디언트</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+        }
+        
+        .grad1 {
+            /*CSS3 미지원 브라우저*/
+            background: red;
+            /*초기 모던 브라우저 = 접두사(prefix)필요*/
+            background: -webkit-radial-gradient(white, yellow, red);
+            background: -moz-radial-gradient(white, yellow, red);
+            background: -o-radial-gradient(white, yellow, red);
+            background: -ms-radial-gradient(white, yellow, red);
+            background: radial-gradient(white, yellow, red);
+        }
+        
+        .grad2 {
+            background: red;
+            background: -webkit-radial-gradient(circle, white, yellow, red);
+            background: -moz-radial-gradient(circle, white, yellow, red);
+            background: -o-radial-gradient(circle, white, yellow, red);
+            background: -ms-radial-gradient(circle, white, yellow, red);
+            background: radial-gradient(circle, white, yellow, red);
+        }
+        
+        .grad3 {
+            background: red;
+            background: -webkit-repeating-linear-gradient(yellow, red 20px);
+            background: -moz-repeating-linear-gradient(yellow, red 20px);
+            background: -o-repeating-linear-gradient(yellow, red 20px);
+            background: -ms-repeating-linear-gradient(yellow, red 20px);
+            background: repeating-linear-gradient(yellow, red 20px);
+        }
+        
+        .grad4 {
+            background: red;
+            background: -webkit-repeating-linear-gradient(yellow, yellow 10px, red 20px, blue 40px);
+            background: -moz-repeating-linear-gradient(yellow, yellow 10px, red 20px, blue 40px);
+            background: -o-repeating-linear-gradient(yellow, yellow 10px, red 20px, blue 40px);
+            background: -ms-repeating-linear-gradient(yellow, yellow 10px, red 20px, blue 40px);
+            background: repeating-linear-gradient(yellow, yellow 10px, red 20px, blue 40px);
+        }
+    </style>
+</head>
+<body>
+    <!--.grad$*4-->
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+</body>
+</html>

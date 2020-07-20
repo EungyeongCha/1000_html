@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블만들기</title>
+    <style>
+        table,th,td {
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+   <h1>
+       table 연습 3행3열
+   </h1>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+            <td>3행3열</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>
+        테이블 셀 합치기
+    </h2>
+    <table border="1">
+        <tr>
+            <td colspan="3">1행1열</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>
+        colgroup
+    </h2>
+    <!--table>(tr>td{내용}*3)*3-->
+    <!--너비: 텍스트 노드만큼(테이블 속성)-->
+    <table border="1">
+        <colgroup>
+            <col style="width: 150px">
+            <col style="width: 300px">
+            <col style="width: 150px">
+            <col style="width: 300px">
+        </colgroup>
+        <tr>
+            <th>이름</th>
+            <td> </td>
+            <th>연락처</th>
+            <td> </td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"> </td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"> </td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>
+        caption 표제목 | 중앙정렬
+    </h2>
+    <table border="1" width="600">
+        <caption>
+            <p>
+                국내에서 자주 사용되는 브라우저
+            </p>
+        </caption>
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+        <!--tr>th+td*2-->
+        <tr>
+            <th>크롬</th>
+            <td>Google</td>
+            <td><a href="http://www.google.co.kr/chrome">http://www.google.co.kr/chrome</a></td>
+        </tr>
+        <tr>
+            <th>파이어폭스</th>
+            <td>Mozilla</td>
+            <td><a href="http://www.mozilla.org/ko/firefox/">http://www.mozilla.org/ko/firefox/</a></td>
+        </tr>
+        <tr>
+            <th>엣지</th>
+            <td>Microsoft</td>
+            <td><a href="http://www.microsoft.com/ko-kr/windows/microsoft-edge">http://www.microsoft.com/ko-kr/windows/microsoft-edge</a></td>
+        </tr>
+    </table>
+    <h2>
+        figcaption | 중앙정렬 안됨
+    </h2>
+    <p id="summary">
+        id값으로 설정후 설명을 자세히 기술하여 낭독기에서 표를 설명하도록 하는 속성 =
+        낭독기에서 읽히는 설명내용
+    </p>
+    <figure>
+        <figcaption>
+            <p>
+                국내에서 자주 사용하는 모던 브라우저
+            </p>
+        </figcaption>
+        <table border="1" width="600" aria-describedby="summary">
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+        <!--tr>th+td*2-->
+        <tr>
+            <th>크롬</th>
+            <td>Google</td>
+            <td><a href="http://www.google.co.kr/chrome">http://www.google.co.kr/chrome</a></td>
+        </tr>
+        <tr>
+            <th>파이어폭스</th>
+            <td>Mozilla</td>
+            <td><a href="http://www.mozilla.org/ko/firefox/">http://www.mozilla.org/ko/firefox/</a></td>
+        </tr>
+        <tr>
+            <th>엣지</th>
+            <td>Microsoft</td>
+            <td><a href="http://www.microsoft.com/ko-kr/windows/microsoft-edge">http://www.microsoft.com/ko-kr/windows/microsoft-edge</a></td>
+        </tr>
+    </table>
+    </figure>
+</body>
+</html>

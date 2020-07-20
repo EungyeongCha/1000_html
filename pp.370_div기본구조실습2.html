@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>div</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        #header {
+            background-color: gold;
+        }
+        
+        #gnb {
+            background-color: orangered;
+        }
+    
+        #left, #middle, #right {
+            background-color: peachpuff;
+            height: 160px;
+        }
+        
+        #middle {
+            background-color: palevioletred;
+        }
+        
+        #right {
+            background-color: coral;
+        }
+        
+        #footer {
+            height: 160px;
+            background-color: yellow;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+   <div id="wrap">
+      
+       <div id="header">
+           <h1>이젠컴퓨터아카데미</h1>
+           <h2>메인메뉴</h2>
+           <div id="gnb">
+               <ul>
+                   <li><a href="#">메뉴1</a>
+                       <ul>
+                           <li><a href="#">서브메뉴1</a></li>
+                           <li><a href="#">서브메뉴2</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">메뉴2</a>
+                       <ul>
+                           <li><a href="#">서브메뉴3</a></li>
+                           <li><a href="#">서브메뉴4</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">메뉴3</a></li>
+                   <li><a href="#">메뉴4</a>
+                       <ul>
+                           <li><a href="#">서브메뉴1</a></li>
+                           <li><a href="#">서브메뉴2</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <div id="contents">
+           <div id="left">
+               <h2>왼쪽컨텐츠</h2>
+               <p>내용</p>
+           </div>
+           <div id="middle">
+               <h2>가운데컨텐츠</h2>
+               <p>내용</p>
+           </div>
+           <div id="right">
+               <h2>오른쪽컨텐츠</h2>
+               <p>내용</p>
+           </div>
+       </div>
+       <div id="footer">
+           <p>사이트 정보</p>
+       </div>
+   </div>
+</body>
+</html>
