@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>레이아웃실습</title>
+    <link rel="stylesheet" href="css/eg_font.css">
     <style>
         * {
             margin: 0;
@@ -32,23 +33,25 @@
             margin: 0 auto;
             width: 960px;
             text-align: center;
+            /*background-color: red;*/
         }
         
         #header h1 {
-            margin-bottom: 10px;
-            font-size: 3em;
-            font-weight: bold;
+            margin: 20px 0;
+            font-size: 3rem;
+            font-weight: 900;
             color: orangered;
-            text-shadow: 0 0 3px #000;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
         
-        .gnb {
+        #header .gnb {
             padding: 20px;
             background-color: orangered;
         }
         
-        .gnb ul li {
+        #header .gnb li {
             display: inline-block;
+            margin: 10px;
             margin-right: 30px;
             color: #fff;
         }
@@ -61,13 +64,23 @@
             text-decoration: underline;
         }
         
-        .gnb a:hover {
-            color: #000;
+        a:link, a:visited, a: focus {
+            color: #fff;
+        }
+        
+        a:hover {
+            text-shadow: 1px 1px 3px #000;
+        }
+        
+        a:active {
+            text-shadow: 1px 1px 3px #fff;
         }
         
         .box1 {
             background-image: url("https://cdn.pixabay.com/photo/2020/05/24/23/37/airplane-5216583_960_720.jpg");
-            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 300px;
+            background-position: center center;
             height: 300px;
             line-height: 150px;
             
@@ -75,7 +88,7 @@
         
         .box1deco1 {
             font-size: 3em;
-            font-weight: bold;
+            font-weight: 900;
             color: orangered;
             text-shadow: 0 0 3px #000;
         }
@@ -98,8 +111,7 @@
         }
         
         #footer {
-            height: 50px;
-            margin-top: 30px;
+            padding: 20px;
         }
         
         
@@ -110,7 +122,7 @@
     <div id="wrapper">
        <!--1. header영역 시작--> 
         <div id="header">
-            <h1>EZEN</h1>
+            <h1 class="roboto">EZEN</h1>
             <div class="gnb">
                 <ul>
                     <li><a href="#">HOME</a></li>

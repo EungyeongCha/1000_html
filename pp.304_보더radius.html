@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>보더 Radius</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        #wrap {
+            margin: 0 auto;
+            width: 960px;
+            text-align: center;
+            padding: 100px;
+        }
+        
+        #header {
+            height: 200px;
+            line-height: 200px;
+            background-color: orange;
+            margin-bottom: 50px;
+            border: 10px solid red;
+            border-radius: 40px;
+        }
+        
+        #article {
+            height: 200px;
+            line-height: 200px;
+            background-color: greenyellow;
+            margin-bottom: 50px;
+            border: 10px dashed darkgreen;
+            border-radius: 50px 150px;
+        }
+        
+        #section {
+            height: 200px;
+            line-height: 200px;
+            background-color: royalblue;
+            margin-bottom: 50px;
+            border: 10px dotted darkblue;
+            border-radius: 30px 50px 200px;
+        }
+        
+        #footer {
+            height: 200px;
+            line-height: 200px;
+            margin-bottom: 50px;
+            background-color: indigo;
+            border: 10px double #fff;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            Border-Radius_1
+        </div>
+        <div id="article">
+            Border-Radius_2
+        </div>
+        <div id="section">
+            Border-Radius_3
+        </div>
+        <div id="footer">
+            Border-Radius_4
+        </div>
+    </div>
+</body>
+</html>
