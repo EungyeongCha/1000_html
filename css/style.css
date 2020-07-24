@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #006699;
+    border: 7px solid #006699;
+}
+
+#header {
+    padding: 30px;
+    color: #fff;
+}
+
+#header h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#header ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#section {
+    padding: 1px 0;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#section h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#section dl dt {
+    font-weight: 700;
+    color: green;
+    padding: 0 20px;
+}
+
+#section dl dd {
+    margin: 10px 0;
+    padding: 0 20px
+}
+
+#pet1, #pet2, #pet3 {
+    border: 5px solid rgb(238, 163, 43);
+    margin: 30px 10px;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+#pet1 {
+    margin: 10px;
+}
+
+#pet2 {
+    border: 5px dashed navy;
+    border-radius: 50px 50px 100px 50px;
+}
+
+#pet3 {
+    border: 7px dotted rgba(255, 255, 255, 0.5);
+    background-color: rgb(219, 112, 147);
+}
+
+#footer {
+    color: #006699;
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+    border-top: 7px solid #006699;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+table tr th {
+    border-spacing: 0 0;
+}
+
+#wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header {
+    background-color: #fcfcfc;
+    padding: 10px;
+}
+
+#header .htxt {
+    color: #0488dd;
+    padding: 20px 120px;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1;
+}
+
+#header .hengtxt{
+    font-size: 64px;
+    font-weight: 800;
+    font-family: 'Lobster', cursive;
+    
+}
+
+#header img {
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+#header p {
+    text-align: left;
+    margin: 40px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.content {
+    text-align: left;
+    padding: 30px;
+}
+.box1 {
+    background-color: #eef8fa;
+}
