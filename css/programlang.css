@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    color: #666666;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    line-height: 150%;
+    color: #000;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.header ul li a:hover {
+    color: red;
+}
+
+.header img {
+    border: 10px solid #fff;
+    box-shadow: 1px 1px 10px #000;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.content p {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.content fieldset {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.content ul li {
+    display: block;
+}
+
+.content button {
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    background-color: darkgrey;
+}
+
+.btn2 {
+    background-color: silver;
+}
+
+.footer {
+    background-image: url("https://cdn.pixabay.com/photo/2013/12/17/20/10/air-bubbles-230014_960_720.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+        margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fTitle {
+    padding-top: 30px;
+    color: darkkhaki;
+    font-weight: bold;
+}
+
+.fPara {
+    color: #fff;
+}
+
+

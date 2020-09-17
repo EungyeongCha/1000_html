@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>트랜지션함수속도</title>
+    <style>
+        .tr_speed div {
+            width: 100px;
+            height: 50px;
+            background-color: deepskyblue;
+            color: #fff;
+            font-weight: bold;
+            margin: 5px 10px;
+            padding: 5px;
+            border-radius: 5px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .tr_speed div {
+            float: left;
+        }
+
+        /*호버효과*/
+        .tr_speed:hover div {
+            height: 400px;
+        }
+
+
+        /*1. linear: 같은 속도로 트랜지션 진행*/
+        .tr_speed .linear {
+            -webkit-transition: all 2s linear;
+            -moz-transition: all 2s linear;
+            -o-transition: all 2s linear;
+            -ms-transition: all 2s linear;
+            transition: all 2s linear;
+        }
+
+        /*2. ease: 처음에는 천천히 시작, 점점 빨라지다가 마지막에 천천히 끝남(기본값)*/
+
+        .tr_speed .ease {
+            -webkit-transition: all 2s ease;
+            -moz-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+
+        /*3. ease-in: 시작을 느리게 함*/
+        .tr_speed .ease-in {
+            -webkit-transition: all 2s ease-in;
+            -moz-transition: all 2s ease-in;
+            -o-transition: all 2s ease-in;
+            -ms-transition: all 2s ease-in;
+            transition: all 2s ease-in;
+        }
+
+        /*4. ease-out: 느리게 끝남*/
+        .tr_speed .ease-out {
+            -webkit-transition: all 2s ease-out;
+            -moz-transition: all 2s ease-out;
+            -o-transition: all 2s ease-out;
+            -ms-transition: all 2s ease-out;
+            transition: all 2s ease-out;
+        }
+
+        /*5. ease-in-out: 느리게 시작하고 느리게 끝남*/
+        .tr_speed .ease-in-out {
+            -webkit-transition: all 2s ease-out;
+            -moz-transition: all 2s ease-out;
+            -o-transition: all 2s ease-out;
+            -ms-transition: all 2s ease-out;
+            transition: all 2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr_speed">
+        <div class="linear">linear</div>
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #wrap {
+        /* absolute의 위치기준값 설정 */
+        position: relative;
+      }
+      #wrap div {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center;
+      }
+      /* 홀o(위치 바뀌어도 원래자리 대체x) */
+      #wrap .relative {
+        background-color: red;
+        position: relative;
+        left: 0;
+        left: 100px;
+        top: 0;
+        top: 100px;
+        z-index: 5;
+      }
+      /* 홀x, 위치 반드시 지정 (상위 아이템 relative로 기준값 지정)*/
+      #wrap .absolute {
+        background-color: blue;
+        position: absolute;
+        left: 300px;
+        top: 200px;
+      }
+      /* 위치 반드시 지정, 위치기준값 = 브라우저 */
+      #wrap .fixed {
+        background-color: yellow;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      #wrap .box1 {
+        background-color: cyan;
+      }
+      #wrap .box2 {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="relative">relative</div>
+      <div class="absolute">absolute</div>
+      <div class="fixed">fixed</div>
+      <div class="box1">박스1</div>
+      <div class="box2">박스2</div>
+    </div>
+  </body>
+</html>

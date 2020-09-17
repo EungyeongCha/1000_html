@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #fcfcfc;
+    padding: 100px 100px 100px 100px;
+}
+
+.header h1 {
+    color: #008ce7;
+    line-height: 1;
+    font-size: 30px;
+}
+
+.header span {
+    font-weight: 800;
+    font-size: 100px;
+    font-family: 'Rowdies', cursive;
+}
+
+
+.header img {
+    height: 650px;
+    padding: 40px 100px;
+    border-radius: 50%;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.content{
+    background-color: #f0f8fb;
+    padding: 40px 100px;
+}
+
+.box1 {
+    margin-bottom: 40px;
+}
+
+.box1-title {
+    margin-bottom: 40px;
+}
+
+.box1-title h2 {
+    color: #008ce7;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.box1-title span {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 6px;
+}
+
+.box1-1 {
+    padding-bottom: 100px;
+}
+
+.box1-1 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.box1-1 p {
+    font-size: 18px;
+}
+
+.box1-2 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;    
+}
+
+.box1-2 p {
+    font-size: 18px;
+}
+
+.box2 {
+    background-color: #fcfcfc;
+    padding-bottom: 80px;
+}
+
+.box2 h2 {
+    color: #008ce7;
+    font-size: 20px;
+}
+.box2-1 span {
+    font-size: 60px;
+    font-family: 'Rowdies', cursive;
+    line-height: 1;
+}
+
+
+.box2 span {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    line-height: 1;
+
+}
+
+.box2-1 {
+    margin-bottom: 30px;
+    padding: 40px 100px;
+}
+
+.box2-2 {
+    margin-bottom: 30px;
+    padding: 40px 100px;  
+    font-weight: bold; 
+}
+
+.box3 {
+    padding: 40px 100px;  
+    color: #f82b54; 
+    font-size: 20px;
+}
+
+.box_header h2 {
+    font-size: 23px;
+}
+.box_header span {
+    font-size: 60px;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.box3 h2 {
+    line-height: 1;
+}
+
+.box2-text {
+    padding: 40px 100px 80px 100px;
+}
+
+.box2-text span {
+    color: #f82b54;
+    font-weight: bold;
+}
+
+
+
+table th {
+    padding: 0;
+}*/

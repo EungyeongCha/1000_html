@@ -1,0 +1,112 @@
+@charset "utf-8";
+#wrap {
+    width: 1920px;
+    height: 1200px;
+    
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 1200px;
+    background-position: center center;
+}
+
+/*전체박스에 여백주기*/
+#container {
+    padding: 100px;
+}
+
+/*1.헤더영역*/
+#header {}
+#header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    width: 260px;
+    /*플롯*/
+    float: left;
+    
+    margin-top: -12px;
+}
+
+#header #nav {
+    width: 1460px;
+    float: right;
+}
+
+#header .gnb {
+    font-size: 24px;
+    font-weight: 400;
+    color: #434343;
+}
+
+#header .gnb li {
+/*    플롯*/
+    float: left;
+    padding-left: 78px;
+}
+
+/*gnb메뉴 링크 가상클래스*/
+#header .gnb li a:link,
+#header .gnb li a:visited,
+#header .gnb li a:focus {
+    color: inherit;
+}
+
+#header .gnb li a:hover {
+    color: red;
+}
+
+/*아이콘 CSS*/
+#header .icon{}
+#header .icon li{
+    /*플롯*/
+    float: right;
+    padding-left: 38px;
+}
+
+/*3. 섹션1*/
+#section {}
+#section h3 {
+    font-size: 110px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-top: 250px;
+    line-height: 1.2em;
+}
+#section p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #999;
+    margin-top: 60px;
+}
+
+#section p+p {
+    margin-top: 60px;
+}
+
+/*4.footer*/
+#footer {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 130px;
+}
+
+/*2. 키비주얼 이미지*/
+
+#article{
+    position: relative;
+}
+#article .visual img{
+    /*포지션*/
+    position: absolute;
+    left: 1260px;
+    top: 30px;
+}

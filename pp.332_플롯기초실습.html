@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        margin: 20px;
+      }
+
+      .wrap {
+        margin: 0 auto;
+        width: 1000px;
+      }
+
+      img {
+        vertical-align: top;
+      }
+
+      ul li {
+        list-style: none;
+        background-color: red;
+        display: inline-block;
+        padding: 10px;
+        color: #ffffff;
+      }
+
+      ul li:hover {
+        background-color: blue;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        width: 200px;
+        height: 30px;
+      }
+
+      .header:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .header img {
+        float: left;
+        vertical-align: center;
+      }
+
+      .header ul {
+        float: right;
+        color: #fff;
+      }
+    </style>
+    <title>플롯레이아웃 기초연습</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <img src="https://via.placeholder.com/95x41" alt="" />
+        <ul>
+          <li><a href="#">COMPANY</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+        </ul>
+      </div>
+      <div class="img">
+        <img src="https://via.placeholder.com/1000x600" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

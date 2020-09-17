@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플롯실습</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 10px;
+        background-color: lightblue;
+      }
+
+      .container:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .container h1 {
+        background-color: blue;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      .item1 {
+        width: 700px;
+        background-color: aqua;
+        float: left;
+        padding: 10px;
+        margin-right: 100px;
+        margin: 10px;
+      }
+
+      .item2 {
+        width: 200px;
+        background-color: #ccc;
+        padding: 10px;
+        float: right;
+        margin: 10px;
+      }
+
+      .footer {
+        padding: 10px;
+        background-color: gray;
+        margin: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>사이트제목</h1>
+      <div class="box">
+        <div class="item1">
+          <h2>본문</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+            praesentium esse iusto doloribus quis mollitia quo. Earum illo
+            expedita et, facere incidunt maiores illum magnam delectus ipsam
+            sapiente nesciunt consectetur cumque ad, voluptates eius saepe a.
+            Tempore ea minus rem id est. Enim tempore a quo dicta eaque, totam
+            corporis.
+          </p>
+        </div>
+        <div class="item2">
+          <h2>사이드바</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            expedita natus rerum voluptate vero cum.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>copyright all reserved</p>
+      </div>
+    </div>
+  </body>
+</html>

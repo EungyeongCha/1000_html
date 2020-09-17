@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS 애니메이션</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /*접두어 필요*/
+            /*1. 애니메이션 이름*/
+            -webkit-animation-name: chg_bg;
+            -moz-animation-name: chg_bg;
+            -o-animation-name: chg_bg;
+            -ms-animation-name: chg_bg;
+            animation-name: chg_bg;
+
+            /*2. 애니메이션 실행시간*/
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            -ms-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        @-webkit-keyframes chg_bg {
+            from {
+                background-color: blue;
+                border: 1px solid #000;
+            }
+
+            to {
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
+
+        @-moz-keyframes chg_bg {
+            from {
+                background-color: blue;
+                border: 1px solid #000;
+            }
+
+            to {
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes chg_bg {
+            from {
+                background-color: blue;
+                border: 1px solid #000;
+            }
+
+            to {
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
+        
+        #div1 {
+            margin: 150px;
+            background-color: greenyellow;
+            -webkit-animation-name: shape;
+            -moz-animation-name: shape;
+            -o-animation-name: shape;
+            -ms-animation-name: shape;
+            animation-name: shape;
+            
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            -ms-animation-duration: 3s;
+            animation-duration: 3s;
+            
+            /*3. 애니메이션 실행 후 처음/역방향 실행여부*/
+            -webkit-animation-direction: alternate;
+            -moz-animation-direction: alternate;
+            -o-animation-direction: alternate;
+            -ms-animation-direction: alternate;
+            animation-direction: alternate;
+            
+            /*4. 애니메이션 반복 실행횟수*/
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        
+        }
+        
+        @keyframes shape {
+            from {
+                border: 1px solid #000;
+            }
+            to {
+                border: 1px solid #000;
+                border-radius: 50%;
+            }
+        }
+        
+        #div2 {
+            background-color: purple;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+  
+        }
+        
+        @keyframes rotate {
+            from {
+                background-color: purple;
+            }
+            to {
+                background-color: gold;
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body></html>

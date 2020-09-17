@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2단플롯 길상백호</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      img {
+        vertical-align: top;
+      }
+
+      body {
+        font: 14px/1.5 '굴림', Gulim, Ariel, sans-serif;
+        color: #333;
+      }
+
+      #wrap {
+        width: 800px;
+        background-color: #ccc;
+        margin: 0 auto;
+      }
+
+      /* 1. 헤더영역 */
+      #header {
+        background-color: #123456;
+        padding: 10px 0;
+      }
+      #header h1 {
+        font: 1.875rem '궁서', Ariel, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: #cc0;
+      }
+      #header h1 strong {
+        font-size: 300%;
+        color: #ffd;
+      }
+
+      #header h1 span {
+        font-size: 150%;
+      }
+
+      #header h1 em {
+        font-size: 200%;
+        color: #ccc;
+      }
+
+      /* 2.섹션영역 */
+      /* 플롯해제:플롯 요소 부모에 적용 */
+      #section:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      #section .lnb {
+        padding: 20px;
+        float: left;
+        width: 200px;
+      }
+      #section .lnb li {
+        padding: 5px 0;
+      }
+
+      #section .lnb li a:hover {
+        color: #662;
+        border-bottom: 1px dashed #662;
+      }
+
+      /* 2-1왼쪽영역 */
+      #section #contents-wrap {
+        background-color: #fff;
+        float: right;
+        width: 600px;
+      }
+
+      #section #contents-wrap h2 {
+        font: bold 24px '궁서', sans-serif;
+        color: yellow;
+        background-color: #800;
+        padding: 10px 20px;
+      }
+
+      #section #contents-wrap p {
+        padding: 20px;
+        text-align: justify;
+      }
+
+      /* 3.푸터영역 */
+      #footer {
+        background-color: #aaa;
+        color: #000;
+        padding: 10px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 1.헤더영역 시작 -->
+      <div id="header">
+        <h1><strong>호랑이</strong>를 <span>주제</span>로 한 <em>민화</em></h1>
+      </div>
+      <!-- 1.헤더영역 끝 -->
+      <!-- 2.섹션영역 시작 -->
+      <div id="section">
+        <!-- 2-1.왼쪽영역 시작 -->
+        <ul class="lnb">
+          <li><a href="#">그림의 작가</a></li>
+          <li><a href="#">그림의 시대</a></li>
+          <li><a href="#">그림의 재료</a></li>
+          <li><a href="#">그림의 주인공</a></li>
+          <li><a href="#">그림의 활용</a></li>
+        </ul>
+        <!-- 2-1.왼쪽영역 끝 -->
+        <!-- 2-1.오른쪽영역 시작 -->
+        <div id="contents-wrap">
+          <h2>승춘용호도</h2>
+          <p>
+            대개 용의 배경은 구름으로 표현한 탓으로 운룡도(雲龍圖)의 형태로
+            나타나고, 호랑이는 송하작호도(松下鵲虎圖), 즉 까치호랑이로 그려지는
+            것이 상례로 되어 있다. 이 밖에 용호상박도(龍虎相搏圖)라는 것이
+            있는데, 이것은 두 강자가 서로 힘다툼을 하는 양상을 표현한 것으로서
+            일반 용호도와는 엄격히 구별되어야 한다.
+          </p>
+          <h2>길상백호</h2>
+          <p>
+            사신(四神)은 동서남북의 방위를 나타내고 우주의 질서를 유지하는
+            상징적인 동물을 말한다. 동쪽의 청룡, 서쪽의 백호, 남쪽의 주작,
+            북쪽의 현무가 있으며 이러한 개념이 언제부터 발생한 것인가 정확하지
+            않지만 오행사상과 깊은 관련이 있는 것으로 추정된다.
+          </p>
+        </div>
+        <!-- 2-1.오른쪽영역 끝 -->
+      </div>
+      <!-- 2.섹션영역 끝 -->
+      <!-- 3.푸터영역 시작 -->
+      <div id="footer">&copy; COPYRIGHT ALL RIGHTS RESERVED.</div>
+      <!-- 3.푸터영역 끝 -->
+    </div>
+  </body>
+</html>

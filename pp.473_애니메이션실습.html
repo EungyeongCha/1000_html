@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>애니메이션실습</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 60px;
+            padding: 30px;
+            margin: 30px;
+            background-color: orangered;
+            animation-name: dis;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes dis {
+            from {
+                width: 500px;
+                height: 60px;
+                padding: 30px;
+                margin: 30px;
+                background-color: yellow;
+                opacity: 0.3;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: orangered;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>CSS Aimation</h2>
+    </div>
+</body></html>

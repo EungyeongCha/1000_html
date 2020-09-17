@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션 absolute</title>
+    <style>
+      #wrap {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ccc;
+        position: relative;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: #0094ff;
+        text-align: center;
+        line-height: 50px;
+      }
+      #box1 {
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      #box2 {
+        background-color: green;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      #box3 {
+        background-color: blue;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      #box4 {
+        background-color: silver;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      #box5 {
+        background-color: purple;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="box" id="box1">BOX1</div>
+      <div class="box" id="box2">BOX2</div>
+      <div class="box" id="box3">BOX3</div>
+      <div class="box" id="box4">BOX4</div>
+      <div class="box" id="box5">BOX5</div>
+    </div>
+  </body>
+</html>

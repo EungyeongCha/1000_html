@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>다단편집</title>
+    <style>
+        section {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        .multi {
+            /*단의 갯수를 고정하고 다단으로 구성*/
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            -o-column-count: 3;
+            column-count: 3;
+            
+            /*단과 단 사이의 여백 지정*/
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            -o-column-gap: 20px;
+            column-gap: 20px;
+            
+            /*단과 단 사이의 구분선의 색상, 스타일, 두께 지정 = 보더 속성값과 동일*/
+            -webkit-column-rule: 2px dotted #999;
+            -moz-column-rule: 2px dotted #999;
+            -o-column-rule: 2px dotted #999;
+            column-rule: 2px dotted #999;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>건강에 좋은 식품 - Super Food</h2>
+        <h3>
+            코코넛 오일
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+        </p>
+
+        <div class="multi">
+            <h3>
+                아보카도
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+            </p>
+
+            <h3>
+                블루베리
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+            </p>
+
+            <h3>
+                아보카도
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+            </p>
+
+            <h3>
+                아몬드
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+            </p>
+
+            <h3>
+                케일
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio suscipit inventore, dolore possimus, et tempore officia aliquam quos illum quidem nobis hic adipisci laborum iure, eum corrupti nostrum eligendi.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dicta.
+            </p>
+        </div>
+    </section>
+</body></html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    width: 1280px;
+    height: 760px;
+    margin: 0 auto;
+    border: 1px solid #000; 
+    padding: 40px;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+header .close-btn {
+    float: right;
+    font-size: 24px;
+}
+
+header .close-btn img {
+    padding-top: 10px;
+}
+
+header .close-btn img:hover {
+    cursor: pointer;
+}
+
+.close-btn p {
+    float: left;
+}
+
+.close-btn img {
+    float: right;
+    padding-left: 20px;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .main-img {
+    padding-top: 214px;
+    float: left;
+}
+
+main .main-content {
+    padding-top: 70px;
+    float: right;
+}
+
+main .main-content .head,
+main .main-content .info
+{
+    font-size: 32px;
+}
+
+main .main-content .head {
+    padding-bottom: 40px;
+}
+
+main .main-content .head h1 {
+    font-size: 36px;
+}
+
+main .main-content .info h2 {
+    font-size: 36px;
+}
+
+main .main-content .info {
+    padding-bottom: 70px;
+}
+
+main .main-content .contact {
+    padding-bottom: 20px;
+}
+
+main .main-content .contact span {
+    padding-right: 30px;
+}
+
+main .main-content .contact .s2 {
+    padding-right: 17px;
+}
+
+main .main-content .contact p {
+    padding-bottom: 20px;
+}
+
+main .icons {
+    padding-bottom: 64px;
+}
+
+main .icons img {
+    padding-right: 10px;
+}
+
+main .icons img:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+}
+
+

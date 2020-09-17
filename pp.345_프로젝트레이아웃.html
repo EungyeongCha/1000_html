@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱태그 프로젝트레이아웃</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main {
+            width: 900px;
+            float: left;
+        }
+
+        header {
+            line-height: 100px;
+        }
+
+        header:after {
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        header .logo {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+        }
+
+        header .gnb {
+            width: 800px;
+            height: 100px;
+            background-color: orange;
+            float: right;
+        }
+
+        header .gnb li {
+            padding-right: 50px;
+        }
+
+        section:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        section .lnb {
+            width: 400px;
+            height: 400px;
+            background-color: lightpink;
+            float: left;
+        }
+
+        section .content {
+            width: 500px;
+            height: 400px;
+            background-color: lawngreen;
+            float: right;
+        }
+
+        footer {
+            width: 900px;
+            height: 50px;
+            background-color: limegreen;
+        }
+
+        .quick {
+            width: 100px;
+            height: 150px;
+            background-color: palevioletred;
+            float: right;
+        }
+
+        .container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <header>
+                <div class="logo">
+                    <h1>로고</h1>
+                </div>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">GNB</a></li>
+                        <li><a href="#">유틸리티 메뉴</a></li>
+                        <li><a href="#">검색창</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section>
+                <article class="lnb">LNB</article>
+                <article class="content">컨텐츠 내용들</article>
+            </section>
+            <footer>하단메뉴, 주소, 저작권</footer>
+        </div>
+        <div class="quick">
+            <aside>퀵메뉴</aside>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

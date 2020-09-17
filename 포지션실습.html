@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>실습글자포지션</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0 auto;
+        width: 1000px;
+      }
+
+      img {
+        width: 960px;
+        height: 640px;
+      }
+      .box {
+        width: 970px;
+        border: 5px solid #000;
+        box-shadow: 2px 2px 2px #000;
+        position: relative;
+      }
+
+      .box h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 112px;
+        font-weight: normal;
+        color: rgba(220, 220, 220, 0.5);
+        text-shadow: 3px 3px 8px #808080;
+        position: absolute;
+        left: 300px;
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./avengers.jpg" alt="" />
+      <h1>AVENGERS</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>동영상배경만들기</title>
+    <style>
+        #bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            /*min=이상 max=이하*/
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -999;
+        }
+        
+        section {
+            position: relative;
+        }
+        
+        section h1 {
+            font-size: 48px;
+            background-color: red;
+            color: #fff;
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            z-index: 1;
+        }
+        
+        section p {
+            background-color: goldenrod;
+            color: #fff;
+            font-size: 32px;
+            position: absolute;
+            right: 10%;
+            top: 500px;
+            z-index: 1;
+            
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <video controls autoplay muted loop id="bg">
+            <source src="media/media/flame.mp4" type="video/mp4">
+            이 영상이 보고 싶으면 최신브라우저를 설치하여 보세요
+        </video>
+    </figure>
+    <section id="container">
+        <h1>이젠컴퓨터아카데미</h1>
+        <p>
+            UIUX 웹퍼블리싱(디자인)
+        </p>
+    </section>
+</body>
+</html>

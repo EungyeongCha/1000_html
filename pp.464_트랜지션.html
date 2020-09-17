@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>트랜지션</title>
+    <style>
+        .tran {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid #000;
+            /*트랜지션 속성은 원본에 코딩*/
+            /*접두어 필요*/
+            -webkit-transition-property: width, height, background-color;
+            -moz-transition-property: width, height, background-color;
+            -o-transition-property: width, height, background-color;
+            -ms-transition-property: width, height, background-color;
+            transition-property: width, height, background-color;
+            
+            /*트랜지션 시간*/
+            -webkit-transition-duration: 2s, 2s, 2s;
+            -moz-transition-duration: 2s, 2s, 2s;
+            -o-transition-duration: 2s, 2s, 2s;
+            -ms-transition-duration: 2s, 2s, 2s;
+            transition-duration: 2s, 2s, 2s;
+            
+            /*트랜지션 한줄 표기법*/
+            transition: all 2s; 
+            
+            cursor: pointer;
+        }
+        
+        /*트랜지션의 변화되는 속성값 */
+        .tran:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="tran"></div>
+</body>
+</html>

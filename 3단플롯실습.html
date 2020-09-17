@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3단 플롯 실습</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+
+      .content .header,
+      .content .footer {
+        background-color: skyblue;
+        padding: 20px;
+      }
+      .main-content {
+        width: 978px;
+        background-color: red;
+        padding: 20px;
+        border: 15px solid grey;
+      }
+
+      .main-content:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .box0 {
+        width: 700px;
+        float: left;
+      }
+      .box0:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .box1 {
+        background-color: yellow;
+        padding: 20px 40px;
+        width: 200px;
+        float: left;
+        /* margin-right: 10px; */
+      }
+
+      .box2 {
+        background-color: pink;
+        padding: 20px;
+        width: 470px;
+        float: right;
+      }
+
+      .box2 p {
+        margin-bottom: 10px;
+      }
+
+      .box3 {
+        background-color: green;
+        padding: 20px 40px;
+        width: 180px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="header">
+          <h1>사이트제목</h1>
+        </div>
+        <div class="main-content">
+          <div class="box0">
+            <div class="box1">
+              <h2>사이드바</h2>
+              <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+              </ul>
+            </div>
+            <div class="box2">
+              <h2>본문</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                iusto in dolor nam vel? Tempora ipsa labore odio nemo itaque.
+              </p>
+            </div>
+          </div>
+          <div class="box3">
+            <h3>사이드바</h3>
+            <ul>
+              <li><a href="#">우측메뉴1</a></li>
+              <li><a href="#">우측메뉴2</a></li>
+              <li><a href="#">우측메뉴3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <h2>푸터영역</h2>
+          <p>copyright all rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

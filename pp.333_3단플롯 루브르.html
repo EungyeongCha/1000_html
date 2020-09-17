@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3단플롯 루브르</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+        font-size: 16px;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      img {
+        vertical-align: top;
+      }
+      body {
+        font: 13px '나눔고딕', Nanumgothic, Arial, sans-serif;
+        background-color: #aaa;
+      }
+
+      #wrap {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      /* 1.헤더영역 */
+      #header {
+        background-color: #fa0;
+        color: #fff;
+        text-align: center;
+      }
+
+      #header h1 {
+        font-size: 800%;
+      }
+
+      #header span {
+        font-size: 20px;
+        padding-bottom: 10px;
+        display: block;
+      }
+
+      #header .stit {
+        font-size: 12px;
+        background-color: #ccc;
+        color: #333;
+        padding: 5px;
+      }
+
+      /* 2. 콘텐츠 영역 */
+      #container {
+      }
+      #container .cover {
+      }
+
+      #container .content {
+        background-color: #ddd;
+        color: #123456;
+      }
+      #container .content dt a {
+        display: block;
+        font: bold 1.3rem '나눔고딕', Nanumgothic, Arial, sans-serif;
+        padding: 5px;
+        background-color: #123456;
+        color: #ddd;
+      }
+
+      #container .content dt + dd {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      #container .sidemenu {
+      }
+      #container .sidemenu dt {
+        font: bold 1.3rem '나눔고딕', Nanumgothic, Arial, sans-serif;
+        background-color: #900;
+        color: #fff;
+      }
+
+      #container .sidemenu dd a {
+        color: #000;
+      }
+
+      #container .aside {
+      }
+      #container .aside dt {
+        font: bold 1.7rem '나눔고딕', Nanumgothic, Arial, sans-serif;
+        color: #999;
+      }
+
+      #container .aside a {
+        color: #000;
+      }
+
+      #container .all {
+        text-decoration: underline;
+      }
+
+      #container .love {
+        color: #fa0;
+        border-bottom: 1px solid #fa0;
+      }
+
+      #container .aside strong {
+        color: #333;
+      }
+
+      #container .aside span {
+        display: block;
+      }
+
+      dt,
+      dd {
+        padding: 10px;
+      }
+
+      /* 3.푸터영역 */
+      #footer {
+      }
+      #footer p {
+        font: bold 1rem '나눔고딕', Nanumgothic, Arial, sans-serif;
+        padding: 10px;
+        text-align: center;
+      }
+      #footer p a {
+        color: #eee;
+      }
+
+      .cover {
+        width: 600px;
+        float: left;
+      }
+
+      .cover .content {
+        width: 400px;
+        float: right;
+      }
+      .cover .sidemenu {
+        width: 200px;
+        float: left;
+      }
+
+      .cover:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .aside {
+        width: 200px;
+        float: right;
+      }
+
+      #container:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 1.헤더영역 시작 -->
+      <div id="header">
+        <h1>
+          Musee d'Orsa
+          <span>
+            Musee d'Orsa Musee d'Orsa Musee d'Orsa Musee d'Orsa Musee d'Orsa
+          </span>
+        </h1>
+        <p class="stit">
+          Royal Academy of Arts, <span>THE REAL VANGOGH</span> THE ARTIST AND
+          HIS LETTERS
+        </p>
+      </div>
+      <!-- 1.헤더영역 끝 -->
+      <!-- 2.콘텐츠영역 시작 -->
+      <div id="container">
+        <!-- 2-1.커버박스 시작 -->
+        <div class="cover">
+          <!-- 2-1-1.콘텐츠(내용)시작 -->
+          <div class="content">
+            <dl>
+              <dt><a href="#">피리부는 소년</a></dt>
+              <dd>에두아르마</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+            <dl>
+              <dt><a href="#">고흐의 방</a></dt>
+              <dd>고흐</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+            <dl>
+              <dt><a href="#">황색 그리스도가 있는 화가의 자화상</a></dt>
+              <dd>에두아르마</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+            <dl>
+              <dt><a href="#">오페리좌의 관현악단</a></dt>
+              <dd>에두아르마</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+            <dl>
+              <dt><a href="#">만종</a></dt>
+              <dd>에두아르마</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+            <dl>
+              <dt><a href="#">제비꽃 장식을 단 베르트모리조</a></dt>
+              <dd>에두아르마</dd>
+              <dd>1866 Musee d'Orsa Musee 161*97cm</dd>
+            </dl>
+          </div>
+          <!-- 2-1-1.콘텐츠(내용)끝 -->
+
+          <!-- 2-1-2.왼쪽메뉴 시작 -->
+          <div class="sidemenu">
+            <dl>
+              <dt>ARTIST</dt>
+              <dd><a href="#">작가의 작품</a></dd>
+              <dd><a href="#">작가의 시대</a></dd>
+              <dd><a href="#">작가의 일생</a></dd>
+            </dl>
+          </div>
+          <!-- 2-1-2.왼쪽메뉴 끝 -->
+        </div>
+        <!-- 2-1.커버박스 끝 -->
+        <!-- 2-2.오른쪽 메뉴 시작 -->
+        <dl class="aside">
+          <dt>
+            <span class="all">전 세계인에게</span>
+            <span class="love">제일 사랑받는</span>
+            <strong>서양 미술사의 시대</strong>
+          </dt>
+          <dd>
+            <a href="#">Workshop Go</a> <span>Life drawing workshop</span>
+          </dd>
+          <dd>
+            <a href="#">Summer exhibition</a> <span>Summer exhibition</span>
+          </dd>
+          <dd><a href="#">RA collection</a> <span>RA collection</span></dd>
+        </dl>
+        <!-- 2-2.오른쪽 메뉴 끝 -->
+      </div>
+      <!-- 2.콘텐츠영역 끝 -->
+      <!-- 3.푸터영역 시작 -->
+      <div id="footer">
+        <p>
+          2020 Musee d'ORsay Musee. All Rights Reserved.
+          <a href="#">d'Orsay Musee@d'Orsay Musee.com</a>
+          Legal status
+        </p>
+      </div>
+      <!-- 3.푸터영역 끝 -->
+    </div>
+  </body>
+</html>

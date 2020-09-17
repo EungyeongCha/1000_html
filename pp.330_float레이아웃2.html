@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>float레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #wrap {
+            margin: 0 auto;
+            width: 900px;
+            /*간단한 플롯해제*/
+            overflow: hidden;
+        }
+        
+        .box1 {
+            background-color: #ccc;
+            width: 300px;
+            float: left;
+        }
+        
+        .box2 {
+            background-color: #eee;
+            width: 300px;
+            float: left;
+        }
+        
+        .box3 {
+            background-color: #666;
+            width: 300px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box1">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ratione blanditiis commodi sint quaerat iste, similique enim voluptas, cum est accusantium dicta mollitia alias vitae at ducimus illo quasi qui sapiente unde explicabo. Dolores aut magni dicta reiciendis placeat cumque, nobis, voluptatem voluptatum voluptates non ratione perferendis inventore quidem, laborum.
+            </p>
+        </div>
+        <div class="box2">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ratione blanditiis commodi sint quaerat iste, similique enim voluptas, cum est accusantium dicta mollitia alias vitae at ducimus illo quasi qui sapiente unde explicabo. Dolores aut magni dicta reiciendis placeat cumque, nobis, voluptatem voluptatum voluptates non ratione perferendis inventore quidem, laborum.
+            </p> 
+        </div>
+        <div class="box3">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ratione blanditiis commodi sint quaerat iste, similique enim voluptas, cum est accusantium dicta mollitia alias vitae at ducimus illo quasi qui sapiente unde explicabo. Dolores aut magni dicta reiciendis placeat cumque, nobis, voluptatem voluptatum voluptates non ratione perferendis inventore quidem, laborum.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

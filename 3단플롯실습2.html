@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3단 플롯실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            padding-bottom: 20px;
+        }
+        
+        ul {
+            padding: 20px;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: skyblue;
+        }
+
+        .content h1 {
+            padding: 40px 20px;
+        }
+
+        .box-wrap {
+            border: 10px solid #a9a9a9;
+            background-color: red;
+
+        }
+
+        .box-wrap:after {
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            margin: 10px;
+            padding: 20px 40px;
+        }
+        
+        .float-1 {
+            width: 700px;
+            float: left;
+        }
+
+        .float-1:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box1 {
+            width: 200px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .box2 {
+            width: 450px;
+            background-color: pink;
+            float: right;
+        }
+        
+        .float-2 {
+            float: right;
+        }
+
+        .box3 {
+            background-color: hotpink;
+            width: 200px;
+        }
+
+        .footer {
+            padding: 40px 20px;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>사이트 제목</h1>
+            <div class="box-wrap">
+                <div class="float-1">
+                    <div class="box1">
+                        <h2>사이드바</h2>
+                        <ul>
+                            <li><a href="#">메뉴1</a></li>
+                            <li><a href="#">메뉴2</a></li>
+                            <li><a href="#">메뉴3</a></li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h2>본문</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sit harum id magni enim, earum vitae dignissimos. Quod dolorum, quaerat.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sit harum id magni enim, earum vitae dignissimos. Quod dolorum, quaerat.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sit harum id magni enim, earum vitae dignissimos. Quod dolorum, quaerat.</p>
+                    </div>
+                </div>
+                <div class="float-2">
+                    <div class="box3">
+                        <h2>사이드바</h2>
+                        <ul>
+                            <li><a href="#">우측메뉴1</a></li>
+                            <li><a href="#">우측메뉴2</a></li>
+                            <li><a href="#">우측메뉴3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <h2>푸터영역</h2>
+                <p>copyright all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body></html>
