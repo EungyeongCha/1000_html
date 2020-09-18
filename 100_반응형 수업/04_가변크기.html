@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>가변크기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #wrap {
+            width: 900px;
+            width: 90%;
+            height: 500px;
+            background-color: black;
+        }
+        
+        #container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #container div {
+            height: 500px;
+        }
+        
+        #container div:nth-child(1) {
+            width: 300px;
+            /*(300/900)*100*/
+            width: 33.3%;
+            background-color: yellow;
+            float:left;
+        }
+        
+        #container div:nth-child(2) {
+            width: 600px;
+            /*(600/900)*100*/
+            width: 66.6%;
+            background-color: blue;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

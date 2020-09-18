@@ -1,3 +1,5 @@
+@charset "utf-8";
+    
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +17,16 @@ img {
 .container {
     width: 1280px;
     height: 760px;
-    margin: 0 auto;
+    margin: 40px auto;
     border: 1px solid #000; 
     padding: 40px;
 }
+
+/*
+#test {
+    background-color: aqua;
+}
+*/
 
 header:after {
     content: "";
@@ -32,11 +40,14 @@ header .logo {
 
 header .logo h1 {
     font-size: 36px;
+    /*원본기준 마진 맞추기*/
+    margin-top: -10px;
 }
 
 header .close-btn {
     float: right;
     font-size: 24px;
+    margin-top: -10px;
 }
 
 header .close-btn img {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        미디어쿼리 : 화면의 크기와 기타 환경을 감지하여 웹사이트를 변경하는 기술
+        웹 반응형을 적용하려면 디바이스의 기기 종류를 알아야 그 기기에 맞게 웹사이트 구조를 바꿀 수 있기 때문에 필요.
+        CSS 속성 중 하나 --> 변화시키고자 하는 영역만 코딩
+        @media [only 또는 not] [미디어유형][and 또는 ,] (조건문) {실행문: CSS코드작성}
+    </title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        img {
+            width: 30%;
+        }
+
+        section {
+            text-align: left;
+        }
+
+        /*모바일first(min-width) PCfirst(max-width)*/
+        /*320px 이상*/
+        @media all and (min-width: 320px) {
+            body {
+                background-color: red;
+            }
+
+            img {
+                width: 30%;
+            }
+
+            section {
+                text-align: left;
+            }
+        }
+
+        /*768px 이상*/
+        @media all and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+
+            img {
+                width: 60%;
+            }
+
+            section {
+                text-align: center;
+            }
+        }
+
+        /*960px 이상*/
+        @media all and (min-width: 960px) {
+            body {
+                background-color: blue;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            section {
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="images/umbrella.jpg" alt="우산이미지">
+    </section>
+
+</body></html>

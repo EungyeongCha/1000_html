@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>가변마진</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            /*(960px)*/
+            width: 90%;
+            height: 500px;
+            background-color: #000;
+        }
+
+        #wrap div {
+            width: 200px;
+            /*(200/960)*100*/
+            width: 20.8333333%;
+            margin: 60px;
+            /*(60/960)*100*/
+            margin: 20px 6.25%;
+            height: 100%;
+        }
+
+        #wrap div:nth-child(1) {
+            background-color: red;
+        }
+
+        #wrap div:nth-child(2) {
+            background-color: skyblue;
+        }
+
+        #wrap div:nth-child(3) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body></html>

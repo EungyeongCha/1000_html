@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        미디어쿼리 작성시 주의사항
+        a. and 구문 앞, 뒤에 반드시 공백 한칸
+        b. (조건문){실행문} 사이는 반드시 붙여서 코딩
+        c. min/max 접두어 사용시,
+        min 접두어 : 반드시 크기가 작은것에서 큰것 순서로 코딩(모바일 우선)
+        max 접두어 : 반드시 크기가 큰것에서 작은것 순서로 코딩(PC 우선)
+    </title>
+    <style>
+        #wrap {
+            height: 500px;
+            border: 4px solid #000;
+        }
+
+        @media all and (min-width: 360px) {
+            #wrap {
+                width: 30%;
+                background-color: aqua;
+                color: #000;
+                font-size: 0.75rem;
+            }
+
+            #wrap img {
+                width: 100%;
+            }
+        }
+
+        @media all and (min-width: 768px) {
+            #wrap {
+                width: 60%;
+                background-color: pink;
+                color: red;
+                font-size: 1rem;
+            }
+
+            #wrap img {
+                width: 100%;
+            }
+        }
+
+        @media all and (min-width: 1024px) {
+            #wrap {
+                width: 90%;
+                background-color: orange;
+                color: blue;
+                font-size: 1rem;
+            }
+
+            #wrap img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>반응형 웹</h1>
+        <img src="images/umbrella.jpg" alt="우산이미지">
+    </div>
+</body></html>
